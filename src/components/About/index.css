@@ -1,0 +1,153 @@
+.about-container {
+  background: url("../../assets/images/faq-background.png"),
+    url("../../assets/images/Overlay1.png"),
+    /* Overlay image 2 */ url("../../assets/images/Overlay2.png"),
+    /* Overlay image 3 */ url("../../assets/images/Overlay3.png");
+
+  background-position: center, center, center, center; /* Adjust positions for all images */
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; /* No repeat for all images */
+  background-size: cover, cover, cover, cover; /* Adjust sizes for all images */
+  background-blend-mode: normal, normal, normal, overlay;
+  min-height: 140vh;
+}
+.about-sec-1 {
+  background: url("../../assets/images/bg-2.png") #010b1f;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-right {
+  background: url("../../assets/images/hero-background.png");
+  backdrop-filter: blur(8px); /* Adjust the blur value as needed */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-right-content {
+  /* border: 1px solid #0054ff; */
+  backdrop-filter: blur(20px); /* Adjust the blur value as needed */
+}
+.about-right-dots {
+  width: 74px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #286a57;
+}
+
+.about-right-dots-2 {
+  width: 74px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #01c7742e;
+}
+.about-right-coin {
+  width: 136px;
+  height: 92px;
+  border-radius: 12px;
+  background: #0055ff4b;
+}
+.about-right-ellipse {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #0055ff8c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.haven-cards {
+  width: 267px;
+  padding: 30px;
+  backdrop-filter: blur(20px); /* Adjust the blur value as needed */
+}
+.haven-card-1 {
+  box-shadow: #ffb73083 0px -50px 46px -34px inset;
+}
+
+.haven-card-2 {
+  box-shadow: #01c7748a 0px 49px 93px -44px inset, #01c774 0px 0px 0px 0px inset;
+}
+
+.haven-card-3 {
+  box-shadow: #00c3ff65 0px -50px 46px -34px inset;
+}
+
+.haven-card-4 {
+  box-shadow: #ff248e7a 0px 49px 93px -44px inset,
+    #ff248e7a 0px 0px 0px 0px inset;
+}
+/* Define the animation speed */
+:root {
+  --animationSpeed: 40s;
+}
+
+/* Keyframes for the scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* Slider container styles */
+.slider {
+  background: transparent;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 960px;
+}
+
+/* Pseudo-elements for gradient overlays */
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, #141720 0%, #08101f00 100%);
+  content: "";
+  height: 50px;
+
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+/* Reverse gradient overlay */
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+/* Forward gradient overlay */
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+/* Animation for scrolling */
+.slide-track {
+  animation: scroll var(--animationSpeed) linear infinite;
+  display: flex;
+  width: calc(270px * 20);
+}
+
+/* Individual slide styles */
+.slide {
+  height: 100px;
+  width: 270px;
+  margin: 0px 10px 0px 10px;
+}
+.swiper-wrapper {
+  margin-bottom: 60px;
+}

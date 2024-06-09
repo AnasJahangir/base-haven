@@ -1,0 +1,29 @@
+.team-container {
+  background: url("../../assets/images/faq-background.png"),
+    url("../../assets/images/Overlay1.png"),
+    /* Overlay image 2 */ url("../../assets/images/Overlay2.png"),
+    /* Overlay image 3 */ url("../../assets/images/Overlay3.png");
+
+  background-position: center, top, top, top; /* Adjust positions for all images */
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat; /* No repeat for all images */
+  background-size: cover, cover, cover, cover; /* Adjust sizes for all images */
+  background-blend-mode: normal, normal, normal, overlay;
+}
+
+.team-card {
+  height: 300px;
+  border-radius: 15px;
+  border: 1px solid #0054ff;
+  backdrop-filter: blur(50px); /* Adjust the blur value as needed */
+}
+
+.team-card-1 {
+  box-shadow: #ffb73083 0px -50px 46px -34px inset;
+}
+.team-card-2 {
+  box-shadow: #00c3ff65 0px -50px 46px -34px inset;
+}
+
+.team-card-3 {
+  box-shadow: #ff3cf880 0px -50px 46px -34px inset;
+}

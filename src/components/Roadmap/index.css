@@ -1,0 +1,24 @@
+.road-map-container {
+  background: url("../../assets/images/hero-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.roadmaplist li {
+  padding: 10px;
+  border-left: 1px solid #ffb830;
+  background-color: #ffb83014;
+  backdrop-filter: blur(20px); /* Adjust the blur value as needed */
+  border-radius: 10px;
+  margin: 20px 0px;
+}
+
+.roadmaplist.list2 li {
+  background-color: #01c77414;
+  border-left: 1px solid #01c774;
+}
+
+.roadmaplist.list3 li {
+  background-color: #ff248d14;
+  border-left: 1px solid #ff248d;
+}

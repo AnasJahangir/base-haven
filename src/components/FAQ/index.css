@@ -1,0 +1,28 @@
+.faq-container {
+  background: url("../../assets/images/faq-background.png"),
+    url("../../assets/images/faq-background.png") #010b1f;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  background-blend-mode: normal, overlay;
+  /* min-height: 140vh; */
+}
+.faq-bg {
+  background: url("../../assets/images/faq-box-background.png");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  backdrop-filter: blur(20px); /* Adjust the blur value as needed */
+  border: 1px solid #0054ff;
+}
+
+.faq-box {
+  padding: 15px 20px;
+  border-left: 1px solid #0055ff;
+  background-color: #0054ff14;
+  backdrop-filter: blur(20px); /* Adjust the blur value as needed */
+  border-radius: 10px;
+  margin: 20px 0px;
+}
